@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter a book name to find out the author of the book "
+        android:layout_margin="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type in the name of the book"
+        android:id="@+id/bookinput"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_margin="8dp"
+        android:id="@+id/search_button"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text"
+        android:layout_marginTop="16dp"
+        android:text="Search Now to obtain information"
+        android:layout_margin="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/authortext"
+        android:layout_margin="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="..........."
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/publisher"
+        android:layout_margin="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:text="..........."
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/published_date"
+        android:layout_margin="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:text="..........."
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_margin="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:text="..........."
+        android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
